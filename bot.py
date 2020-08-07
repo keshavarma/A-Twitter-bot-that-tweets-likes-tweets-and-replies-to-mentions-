@@ -107,7 +107,6 @@ if __name__ == "__main__":
 
     while True:
         tweet_quote()
-        reply_mentions()
         like_tweets()
         print("done for today..")
         time.sleep(interval)
