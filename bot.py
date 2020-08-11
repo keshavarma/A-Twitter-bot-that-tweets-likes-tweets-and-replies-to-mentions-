@@ -67,8 +67,8 @@ def like_tweets():
     api = tweepy.API(auth, wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
 
 
-    search=['swamivivekananda','dharma','spirituality','ramakrishna mission', 'upanishads','gita','vedanta','wisdom','srikrishna','shiva','om']
-    ntweets=100
+    search=['swamivivekananda','dharma','ramakrishna mission', 'upanishads','gita','vedanta','indian wisdom','srikrishna','shiva','om']
+    ntweets=150
 
     for s in search:
         for tweet in tweepy.Cursor(api.search,s).items(ntweets):
